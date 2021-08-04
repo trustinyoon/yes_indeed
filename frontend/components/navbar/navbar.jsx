@@ -24,6 +24,7 @@ function Navbar () {
       <nav className="navbar">
         <Link to="/" className="navbar-logo">
           Yes Indeed
+          <i class='fab fa-firstdraft' />
         </Link>
         <div className="menu-icon" onClick={handleClick}>
           <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
@@ -35,8 +36,8 @@ function Navbar () {
             </Link>
           </li>
           <li className='nav-item'
-              onMouseEnter={onMouseEnter}
-              onMouseLeave={onMouseLeave}
+              // onMouseEnter={onMouseEnter}
+              // onMouseLeave={onMouseLeave}
           >
             <Link to='/categories' className='nav-links' onClick={closeMobileMenu}>
               Categories <i className='fas fa-caret-down' />

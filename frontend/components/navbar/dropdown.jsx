@@ -9,8 +9,10 @@ function Dropdown() {
   
   return (
     <>
-      <ul onClick={handleClick} 
-      className={click ? 'dropdown-menu clicked' : 'dropdown-menu'}>
+      <ul 
+        onClick={handleClick} 
+        className={click ? 'dropdown-menu clicked' : 'dropdown-menu'}
+      >
         {CategoryMenuItems.map((item, index) => {
           return (
             <li key={index}>
@@ -21,7 +23,7 @@ function Dropdown() {
                 {item.title}
               </Link>
             </li>
-          )
+          );
         })}
       </ul>    
     </>
